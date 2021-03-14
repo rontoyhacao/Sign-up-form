@@ -1,0 +1,201 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(169, 214, 101);
+    .container {
+        display: flex;
+        background-color: white;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 800px;
+        height: 600px;
+        margin: auto;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        .left {
+            width: 45%;
+            background: url(/assets/images/green-goblin.png);
+            background-size: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            padding: 80px 40px 40px;
+            .hero-wrapper {
+                background: transparent;
+                backdrop-filter: blur(8px) contrast(80%);
+                color: white;
+                height: 400px;
+                border-radius: 10px;
+                padding: 20px 40px 40px 20px;
+                width: 100%;
+                max-width: 400px;
+                .logo-text {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                hr {
+                    margin: 10px 0;
+                    width: 30px;
+                }
+                .hero-container {
+                    height: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .hero-header {
+                        .hero-text {
+                            font-weight: 400;
+                            line-height: 25px;
+                            span {
+                                font-weight: 300;
+                                display: block;
+                                font-size: 24px;
+                            }
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 10px;
+                            margin-top: 10px;
+                        }
+                    }
+                    .join-container {
+                        div {
+                            font-weight: 300;
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                font-weight: 600;
+                                color: white;
+                                width: max-content;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 60px;
+            main {
+                width: 100%;
+                .form-wrapper {
+                    .form-container {
+                        h1 {
+                            margin-bottom: 20px;
+                        }
+                        label {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                        .error {
+                            .input--style {
+                                box-shadow: inset 0 -2px 0 red;
+                                margin: 0;
+                            }
+                            .validate {
+                                display: flex;
+                            }
+                        }
+                        .password-check-container {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            input {
+                                margin-right: 10px;
+                            }
+                            label {
+                                font-weight: initial;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .line-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 20px 0;
+                        hr {
+                            width: 50px;
+                        }
+                        span {
+                            margin: 0 10px;
+                            font-size: 14px;
+                        }
+                    }
+                    .google-signup {
+                        display: flex;
+                        a {
+                            border: 1px solid rgb(141, 172, 4);
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: inherit;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0;
+                            padding: 0;
+                            &:hover {
+                                background: rgba(0, 0, 0, 0.1);
+                            }
+                            .social-icon {
+                                background: url(/assets/images/g-logo.4c9c3df69e998b08e1d14c4bbbeb3949.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.input--style {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid hsl(246, 84%, 95%);
+    margin-bottom: 8px;
+    &::placeholder {
+        color: hsl(246, 26%, 86%);
+    }
+}
+.input--button {
+    background: rgb(141, 172, 4);
+    color: white;
+    font-weight: 600;
+    padding: 10px 0;
+    cursor: pointer;
+    margin: 5px 0 0;
+    border: none;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+.input--outline {
+    outline: none;
+    &:focus {
+        border: 1px solid hsl(249, 10%, 26%);
+    }
+}
+.validate {
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}

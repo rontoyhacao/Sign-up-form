@@ -1,0 +1,19 @@
+@media screen and (max-width: 850px) {
+    .wrapper {
+        .container {
+            flex-direction: column;
+            height: initial !important;
+            border-radius: initial !important;
+            .left {
+                width: initial !important;
+                border-top-right-radius: initial !important;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+            .right {
+                width: initial !important;
+                padding: 60px;
+            }
+        }
+    }
+}
