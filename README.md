@@ -7,3 +7,6 @@ Tech stack used:
 - HTML5
 - CSS/Sass
 - Javascript
+
+## Screenshot
+![Capture](https://user-images.githubusercontent.com/52210745/111072078-fcf94700-8513-11eb-8866-370ea7c96194.PNG)
